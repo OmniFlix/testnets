@@ -1,2 +1,2 @@
 # OmniFlix Testnets
-Resources for Omniflix testnets.
+Resources for OmniFlix testnets.
