@@ -1,0 +1,7 @@
+- name: Mishko_O
+  type: local
+  address: omniflix1xclxfkm0v36d80cgnm79ml30lg0geevn405sla
+  pubkey: omniflixpub1addwnpepqgfrge25ym9uc4l7n42p2rgq9aqzlxsk7d2efz853wq9l9wx54z6spgmpl5
+  mnemonic: ""
+  threshold: 0
+  pubkeys: []
