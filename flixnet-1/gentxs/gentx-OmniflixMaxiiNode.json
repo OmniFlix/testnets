@@ -1,0 +1,7 @@
+- name: OmniflixMaxiiNode
+  type: local
+  address: omniflix10h0mxz3keaflv4g83as8xja9gtwd80kg807gkl
+  pubkey: omniflixpub1addwnpepq0sa3s9yghqtu0evzvkywx87cr3maxacuh8w4082k4kywql7aku2jflc9qp
+  mnemonic: ""
+  threshold: 0
+  pubkeys: []
