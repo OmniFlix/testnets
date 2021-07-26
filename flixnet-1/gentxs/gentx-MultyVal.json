@@ -1,13 +1,1 @@
-- name: MultyVal
-  type: local
-  address: omniflix1zzeawss474kj8hv2u36hzxa6p70ml9ftwmgexd
-  pubkey: omniflixpub1addwnpepqtg3kpfv7lzppjp7cs33fjppnq94upnw944hpfr7as55zc2vv46qk5d3n8l
-  mnemonic: ""
-  threshold: 0
-  pubkeys: []
-
-
-**Important** write this mnemonic phrase in a safe place.
-It is the only way to recover your account if you ever forget your password.
-
-client exit mass opera paper myself sound danger narrow sound sample civil coast tobacco holiday laptop misery giant tonight era exercise expect parent boring
+{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator","description":{"moniker":"MultyVal","identity":"","website":"","security_contact":"","details":"MultyVal from DOUBLETOP"},"commission":{"rate":"0.100000000000000000","max_rate":"0.200000000000000000","max_change_rate":"0.010000000000000000"},"min_self_delegation":"1","delegator_address":"omniflix1zzeawss474kj8hv2u36hzxa6p70ml9ftwmgexd","validator_address":"omniflixvaloper1zzeawss474kj8hv2u36hzxa6p70ml9ftrf6c89","pubkey":{"@type":"/cosmos.crypto.ed25519.PubKey","key":"N8ITu/h3DhiA64AGRP+PrzIGExCdp7jneqjQGBeVRzE="},"value":{"denom":"uflix","amount":"50000000"}}],"memo":"ab22308a7043aef774b0d5790de1121116cc7c84@143.198.106.55:26656","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AtEbBSz3xBDIPsQjFMghmAteBm4ta3CkfuwpQWFMZXQL"},"mode_info":{"single":{"mode":"SIGN_MODE_DIRECT"}},"sequence":"0"}],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":["HErbpZ4wv2q1ygD2yhI7+OnrtyI5M3w1EsivoCWTAVRd7InPpLK9KnhpnwVM9jgc20tbAvzb6XxiIZL709ZLFQ=="]}
