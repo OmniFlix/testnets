@@ -1,8 +1,8 @@
 #!/bin/bash
 
 CHAIN_ID=flixnet-1
-NODE_HOME=~/tmp/ofhub
-CONFIG=~/tmp/ofhub/config
+NODE_HOME=/tmp/ofhub
+CONFIG=/tmp/ofhub/config
 
 rm -rf $NODE_HOME
 
