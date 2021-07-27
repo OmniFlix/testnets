@@ -1,7 +1,0 @@
-- name: MyFirstNode
-  type: local
-  address: omniflix1uvj43cgp0epf4l3wpl38ceprf8emk874adzm3h
-  pubkey: omniflixpub1addwnpepqggkrug8hf6xj96favak0wp59y2z8rc2fq5a4n3dzvvfqarf3r29x40v048
-  mnemonic: ""
-  threshold: 0
-  pubkeys: []
