@@ -25,4 +25,4 @@ echo "Validate genesis ..."
 omniflixhubd validate-genesis --home $NODE_HOME
 
 cp $CONFIG/genesis.json $CHAIN_ID
-echo "Done. File saved at ${$CHAIN_ID}/genesis.json"
+echo "Done. File saved at ${CHAIN_ID}/genesis.json"
