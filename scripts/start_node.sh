@@ -2,7 +2,7 @@
 
 NODE_HOME=~/.omniflixhub
 NODE_MONIKER="myflixnode"
-CHAIN_ID="flixnet-1"
+CHAIN_ID="flixnet-2"
 SERVICE_NAME="omniflixhubd"
 
 is_exists () {
@@ -44,7 +44,7 @@ else
     sudo apt-get install git curl build-essential make jq -y
     git clone https://github.com/Omniflix/omniflixhub.git
     cd omniflixhub
-    git checkout v0.1.0
+    git checkout v0.2.1
     make install
     
     echo "omniflixhub installed ..."

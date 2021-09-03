@@ -15,4 +15,6 @@ jobs:
       - name: validate-gentx
         run: |
           bash -x ./scripts/verify_gentx.sh
-
+      - name: check-is-previous-participant
+        run: |
+          python3 ./scripts/is_prev_participant.py
