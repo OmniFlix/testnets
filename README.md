@@ -2,7 +2,7 @@
 All resources for participation in the testnets of the [OmniFlix Network](https://OmniFlix.network) will be published here.
 
 # FlixNet-2
-- If you are here to participate in the FlixNet-1 testnet, visit the [FlixNet-2 folder](https://github.com/OmniFlix/testnets/tree/main/flixnet-2) for more information.
+- If you are here to participate in the FlixNet-1 testnet, visit the [FlixNet-2 folder](https://github.com/OmniFlix/docs/tree/main/guides/testnets/flixnet-2) for more information.
 - FlixNet-2 gentx submission end time -- 6th September, 2pm UTC
 - FlixNet-2 genesis file release -- 7th or 8th September. Follow the [blog](https://blog.OmniFlix.network) to stay updated.
 - FlixNet-2 launch -- 8th September, 11am UTC
