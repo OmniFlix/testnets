@@ -1,7 +1,0 @@
-{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator","description":{"moniker":"teahouse","identity":"18A33A52322F990E","website":"...","security_contact":"","details":"
-..."},"commission":{"rate":"0.100000000000000000","max_rate":"0.200000000000000000","max_change_rate":"0.010000000000000000"},"min_self_delegation":"1","delegator_address":"omniflix1fte5s779
-qgltqg5j39rzm0qzhgmqsaw92zjlqe","validator_address":"omniflixvaloper1fte5s779qgltqg5j39rzm0qzhgmqsaw98sq7p3","pubkey":{"@type":"/cosmos.crypto.ed25519.PubKey","key":"UWuSPljeVHmjnAE6e5ubqbye
-mebWeNVoysCy9VCgLek="},"value":{"denom":"uflix","amount":"50000000"}}],"memo":"77479d09ee1b1c6cae7964e7bc9e41122d400e1a@172.31.28.167:26656","timeout_height":"0","extension_options":[],"non_
-critical_extension_options":[]},"auth_info":{"signer_infos":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"Ap8lQGLVhF0DJ5A0gigtOTrF+eqyQRzcYA8ilQqEl+cA"},"mode_info":{"sing
-le":{"mode":"SIGN_MODE_DIRECT"}},"sequence":"0"}],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":["u43pLUoTHP9t26wCO4IGa/dnCXaZbkQAsEUb0jKY+q8nKfd+QjGfRdoYx3V
-HZHFe1QflY7fUSnKyD2ZBeYxYVQ=="]}
