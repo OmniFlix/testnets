@@ -1,0 +1,12 @@
+
+- name: JohnnyRuz_wallet
+  type: local
+  address: omniflix1w0a7se8h33jvnm9qhymts75t23ljlv5ymdaftu
+  pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A8f2ueAsXaCY3H6f3u4jvSL/q4DaljmpGCCq8lD8XOAi"}'
+  mnemonic: ""
+
+
+**Important** write this mnemonic phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
+
+prison post camera bundle satisfy hip expect tomorrow animal tail tube delay resource funny title cabbage shallow area era blue whale reward poverty suspect
