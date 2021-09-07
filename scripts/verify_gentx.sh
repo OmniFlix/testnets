@@ -1,23 +1,37 @@
 #!/bin/sh
 FLIX_HOME="/tmp/omniflixhub$(date +%s)"
 RANDOM_KEY="random-validator-key"
-CHAIN_ID=flixnet-1
+CHAIN_ID=flixnet-2
+VERSION=v0.2.1
 
-GENTX_FILE=$(find ./$CHAIN_ID/gentxs -iname "*.json")
-LEN_GENTX=$(echo ${#GENTX_FILE})
 
-GENTX_DEADLINE=$(date -u -d '2021-07-26T18:00:00.000Z' +'%s')
+GENTX_SUBMISSION_START=$(date -u -d '2021-09-03T14:00:00.000Z' +'%s')
+GENTX_SUBMISSION_DEADLINE=$(date -u -d '2021-09-06T14:00:00.000Z' +'%s')
+
 now=$(date -u +'%s')
 
 declare -i maxbond=50000000
+if [ $now -le GENTX_SUBMISSION_START ]; then
+    echo 'Gentx submission not started yet'
+    exit 1
+fi
 
-if [ $now -ge $GENTX_DEADLINE ]; then
+if [ $now -ge GENTX_SUBMISSION_DEADLINE ]; then
     echo 'Gentx submission is closed'
+    exit 1
+fi
+GENTX_FILE=$(find ./$CHAIN_ID/gentxs -iname "*.json")
+FILES_COUNT=$(find ./$CHAIN_ID/gentxs -iname "*.json" | wc -l)
+LEN_GENTX=$(echo ${#GENTX_FILE})
+
+if [ $FILES_COUNT -g 1 ]; then
+    echo 'Invalid! found more than 1 json file'
     exit 1
 fi
 
 if [ $LEN_GENTX -eq 0 ]; then
     echo "gentx file not found."
+    exit 1
 else
     set -e
 
@@ -38,7 +52,7 @@ else
     fi
     echo "...........Init omniflixhub.............."
 
-    wget -q https://github.com/OmniFlix/omniflixhub/releases/download/v0.1.0/omniflixhubd -O omniflixhubd
+    wget -q https://github.com/OmniFlix/omniflixhub/releases/download/$VERSION/omniflixhubd -O omniflixhubd
     chmod +x omniflixhubd
     
     ./omniflixhubd keys add $RANDOM_KEY --home $FLIX_HOME
@@ -78,3 +92,4 @@ else
     killall omniflixhubd >/dev/null 2>&1
     rm -rf $FLIX_HOME >/dev/null 2>&1
 fi
+

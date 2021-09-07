@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHAIN_ID=flixnet-1
+CHAIN_ID=flixnet-2
 NODE_HOME=/tmp/ofhub
 CONFIG=/tmp/ofhub/config
 
@@ -25,4 +25,4 @@ echo "Validate genesis ..."
 omniflixhubd validate-genesis --home $NODE_HOME
 
 cp $CONFIG/genesis.json $CHAIN_ID
-echo "Done. File saved at ${$CHAIN_ID}/genesis.json"
+echo "Done. File saved at ${CHAIN_ID}/genesis.json"
