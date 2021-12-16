@@ -1,5 +1,8 @@
 name: GenTx
-on: [pull_request]
+on:
+  push:
+    branches:
+      - master
 jobs:
   verify-gentx:
     runs-on: ubuntu-latest
