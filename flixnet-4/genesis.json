@@ -1,0 +1,354 @@
+{
+    "genesis_time": "2022-02-17T12:30:00Z",
+    "chain_id": "flixnet-4",
+    "initial_height": "1",
+    "consensus_params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1",
+        "time_iota_ms": "1000"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {}
+    },
+    "app_hash": "",
+    "app_state": {
+      "alloc": {
+        "params": {
+          "distribution_proportions": {
+            "staking_rewards": "0.350000000000000000",
+            "nft_incentives": "0.400000000000000000",
+            "node_hosts_incentives": "0.050000000000000000",
+            "developer_rewards": "0.150000000000000000",
+            "community_pool": "0.050000000000000000"
+          },
+          "weighted_developer_rewards_receivers": [
+            {
+              "address": "omniflix1pg5u7n3s2ydtxwkef9memjupkp0spsveflzq0y",
+              "weight": "0.5"
+            },
+            {
+              "address": "omniflix1x2x9dxlujkqy2mdg4pyy0hsnuwxej7cq4dcnl3",
+              "weight": "0.5"
+            }
+          ]
+        }
+      },
+      "auth": {
+        "params": {
+          "max_memo_characters": "256",
+          "tx_sig_limit": "7",
+          "tx_size_cost_per_byte": "10",
+          "sig_verify_cost_ed25519": "590",
+          "sig_verify_cost_secp256k1": "1000"
+        },
+        "accounts": [
+          {
+            "@type": "/cosmos.auth.v1beta1.BaseAccount",
+            "address": "omniflix1xdur8y7gnu7tafrrwd55pg0culrr7uh9cn6m08",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          },
+          {
+            "@type": "/cosmos.auth.v1beta1.BaseAccount",
+            "address": "omniflix184f5dvcwy0nvnsf8q0pnckxjr35wtgly2r9atc",
+            "pub_key": null,
+            "account_number": "0",
+            "sequence": "0"
+          }
+        ]
+      },
+      "authz": {
+        "authorization": []
+      },
+      "bank": {
+        "params": {
+          "send_enabled": [],
+          "default_send_enabled": true
+        },
+        "balances": [
+          {
+            "address": "omniflix1xdur8y7gnu7tafrrwd55pg0culrr7uh9cn6m08",
+            "coins": [
+              {
+                "denom": "uflix",
+                "amount": "99000000000000"
+              }
+            ]
+          },
+          {
+            "address": "omniflix184f5dvcwy0nvnsf8q0pnckxjr35wtgly2r9atc",
+            "coins": [
+              {
+                "denom": "uflix",
+                "amount": "1000000000000"
+              }
+            ]
+          }
+        ],
+        "supply": [],
+        "denom_metadata": [
+          {
+            "description": "FLIX is the native token of the OmniFlix Hub which powers the OmniFlix Network.",
+            "denom_units": [
+              {
+                "denom": "uflix",
+                "exponent": 0,
+                "aliases": [
+                  "microflix"
+                ]
+              },
+              {
+                "denom": "mflix",
+                "exponent": 3,
+                "aliases": [
+                  "milliflix"
+                ]
+              },
+              {
+                "denom": "flix",
+                "exponent": 6,
+                "aliases": []
+              }
+            ],
+            "base": "uflix",
+            "display": "flix",
+            "name": "FLIX",
+            "symbol": "uflix"
+          }
+        ]
+      },
+      "capability": {
+        "index": "1",
+        "owners": []
+      },
+      "crisis": {
+        "constant_fee": {
+          "denom": "uflix",
+          "amount": "1000"
+        }
+      },
+      "distribution": {
+        "params": {
+          "community_tax": "0.020000000000000000",
+          "base_proposer_reward": "0.010000000000000000",
+          "bonus_proposer_reward": "0.040000000000000000",
+          "withdraw_addr_enabled": true
+        },
+        "fee_pool": {
+          "community_pool": []
+        },
+        "delegator_withdraw_infos": [],
+        "previous_proposer": "",
+        "outstanding_rewards": [],
+        "validator_accumulated_commissions": [],
+        "validator_historical_rewards": [],
+        "validator_current_rewards": [],
+        "delegator_starting_infos": [],
+        "validator_slash_events": []
+      },
+      "evidence": {
+        "evidence": []
+      },
+      "feegrant": {
+        "allowances": []
+      },
+      "genutil": {
+        "gen_txs": [
+          {
+            "body": {
+              "messages": [
+                {
+                  "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                  "description": {
+                    "moniker": "omniflix-validator-1",
+                    "identity": "",
+                    "website": "https://omniflix.network",
+                    "security_contact": "",
+                    "details": "omniflix flixnet validator"
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "omniflix184f5dvcwy0nvnsf8q0pnckxjr35wtgly2r9atc",
+                  "validator_address": "omniflixvaloper184f5dvcwy0nvnsf8q0pnckxjr35wtgly83hu2s",
+                  "pubkey": {
+                    "@type": "/cosmos.crypto.ed25519.PubKey",
+                    "key": "0TMoEgWG9lEkgs9EffXmXwYvFgrL37bwokhzknE5qSE="
+                  },
+                  "value": {
+                    "denom": "uflix",
+                    "amount": "1000000000"
+                  }
+                }
+              ],
+              "memo": "4df6e709ce8bff6c671a35a659fdda4b2563bc1a@10.148.0.4:26656",
+              "timeout_height": "0",
+              "extension_options": [],
+              "non_critical_extension_options": []
+            },
+            "auth_info": {
+              "signer_infos": [
+                {
+                  "public_key": {
+                    "@type": "/cosmos.crypto.secp256k1.PubKey",
+                    "key": "AnjO7aX2peEXxpG9dSBqCuhA52WWjzO/EKb/ISEZHOY4"
+                  },
+                  "mode_info": {
+                    "single": {
+                      "mode": "SIGN_MODE_DIRECT"
+                    }
+                  },
+                  "sequence": "0"
+                }
+              ],
+              "fee": {
+                "amount": [],
+                "gas_limit": "200000",
+                "payer": "",
+                "granter": ""
+              }
+            },
+            "signatures": [
+              "zAXwFVOoHQRAB5yErWN5vwQrYA+V6DzOylDHqLCh3VcFI+OZed4jVqK0/oC7v04eeqaDd6oF0Y91Fs1mCtdArA=="
+            ]
+          }
+        ]
+      },
+      "gov": {
+        "starting_proposal_id": "1",
+        "deposits": [],
+        "votes": [],
+        "proposals": [],
+        "deposit_params": {
+          "min_deposit": [
+            {
+              "denom": "uflix",
+              "amount": "100000000"
+            }
+          ],
+          "max_deposit_period": "172800s"
+        },
+        "voting_params": {
+          "voting_period": "86400s"
+        },
+        "tally_params": {
+          "quorum": "0.334000000000000000",
+          "threshold": "0.500000000000000000",
+          "veto_threshold": "0.334000000000000000"
+        }
+      },
+      "ibc": {
+        "client_genesis": {
+          "clients": [],
+          "clients_consensus": [],
+          "clients_metadata": [],
+          "params": {
+            "allowed_clients": [
+              "06-solomachine",
+              "07-tendermint"
+            ]
+          },
+          "create_localhost": false,
+          "next_client_sequence": "0"
+        },
+        "connection_genesis": {
+          "connections": [],
+          "client_connection_paths": [],
+          "next_connection_sequence": "0",
+          "params": {
+            "max_expected_time_per_block": "30000000000"
+          }
+        },
+        "channel_genesis": {
+          "channels": [],
+          "acknowledgements": [],
+          "commitments": [],
+          "receipts": [],
+          "send_sequences": [],
+          "recv_sequences": [],
+          "ack_sequences": [],
+          "next_channel_sequence": "0"
+        }
+      },
+      "marketplace": {
+        "listings": [],
+        "ListingCount": "0",
+        "params": {
+          "sale_commission": "0.010000000000000000",
+          "distribution": {
+            "staking": "0.500000000000000000",
+            "community_pool": "0.500000000000000000"
+          }
+        }
+      },
+      "mint": {
+        "minter": {
+          "inflation": "0.000000000000000000",
+          "annual_provisions": "0.000000000000000000"
+        },
+        "params": {
+          "mint_denom": "uflix",
+          "inflation_rate_change": "0.000000000000000000",
+          "inflation_max": "0.000000000000000000",
+          "inflation_min": "0.000000000000000000",
+          "goal_bonded": "0.670000000000000000",
+          "blocks_per_year": "6311520"
+        }
+      },
+      "onft": {
+        "collections": []
+      },
+      "params": null,
+      "slashing": {
+        "params": {
+          "signed_blocks_window": "1000",
+          "min_signed_per_window": "0.050000000000000000",
+          "downtime_jail_duration": "60s",
+          "slash_fraction_double_sign": "0.050000000000000000",
+          "slash_fraction_downtime": "0.001000000000000000"
+        },
+        "signing_infos": [],
+        "missed_blocks": []
+      },
+      "staking": {
+        "params": {
+          "unbonding_time": "1814400s",
+          "max_validators": 64,
+          "max_entries": 7,
+          "historical_entries": 10000,
+          "bond_denom": "uflix"
+        },
+        "last_total_power": "0",
+        "last_validator_powers": [],
+        "validators": [],
+        "delegations": [],
+        "unbonding_delegations": [],
+        "redelegations": [],
+        "exported": false
+      },
+      "transfer": {
+        "port_id": "transfer",
+        "denom_traces": [],
+        "params": {
+          "send_enabled": true,
+          "receive_enabled": true
+        }
+      },
+      "upgrade": {},
+      "vesting": {}
+    }
+  }
