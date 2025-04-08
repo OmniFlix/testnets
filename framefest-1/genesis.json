@@ -505,9 +505,9 @@
       "next_campaign_number": "1",
       "claims": [],
       "params": {
-        "max_campaign_duration": "7776000s",
+        "max_campaign_duration": "2629800s",
         "creation_fee": {
-          "denom": "uflix",
+          "denom": "uframe",
           "amount": "10000000"
         }
       }
@@ -533,8 +533,8 @@
         "minimum_lease_hours": "1",
         "maximum_lease_hours": "8760",
         "min_deposit": {
-          "denom": "uflix",
-          "amount": "10000000"
+          "denom": "uframe",
+          "amount": "200000000"
         },
         "initial_deposit_percentage": "0.100000000000000000",
         "lease_commission": "0.010000000000000000",
@@ -574,8 +574,8 @@
       "collections": [],
       "params": {
         "denom_creation_fee": {
-          "denom": "uflix",
-          "amount": "10000000"
+          "denom": "uframe",
+          "amount": "25000000"
         }
       }
     },
@@ -622,7 +622,7 @@
       "params": {
         "denom_creation_fee": [
           {
-            "denom": "uflix",
+            "denom": "uframe",
             "amount": "100000000"
           }
         ],
